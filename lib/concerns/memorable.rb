@@ -2,16 +2,13 @@ require 'pry'
 
 module Memorable
   module ClassMethods
-    @@songs = []
-    @@artists = []
 
     def count
       self.all.count
     end
 
     def reset_all
-      @@songs.clear
-      @@artists.clear
+      self.all.clear
     end
   end
 
