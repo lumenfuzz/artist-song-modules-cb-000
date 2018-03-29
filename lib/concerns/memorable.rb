@@ -2,6 +2,7 @@ require 'pry'
 
 module Memorable
   module ClassMethods
+    @@songs = []
 
     def count
       self.all.count
