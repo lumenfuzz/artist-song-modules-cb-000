@@ -6,7 +6,6 @@ module Memorable
     @@artists = []
 
     def count
-      binding.pry
       self.all.count
     end
 
